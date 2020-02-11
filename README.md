@@ -1,5 +1,12 @@
 # SMT203_PROJECT
  This is a project for the module SMT203 - Smart City Systems Management
+ 
+<b>Problem statement of our project</b>
+The current attendance-taking process is unstandardized and inefficient in the age of smart technology. This simple activity has resulted in time wastage amongst professors and teaching assistants.
+
+Our solution
+
+
 
 ![PRESENSE Logo](PRESENSE.PNG)
 
