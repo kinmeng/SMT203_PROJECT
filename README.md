@@ -20,4 +20,6 @@ https://ourcodeworld.com/articles/read/841/how-to-install-and-use-the-python-fac
 After which, pip install cv2, numpy, matplotlib and download an xserver to view the output of the API and follow the instructions here to ensure that it works:
 http://www.straightrunning.com/XmingNotes/IDH_PROGRAM.htm
 
+Remember to do this if XSERVER doesn't start
+export DISPLAY=:0.0
 
