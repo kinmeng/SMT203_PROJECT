@@ -23,3 +23,6 @@ http://www.straightrunning.com/XmingNotes/IDH_PROGRAM.htm
 Remember to do this if XSERVER doesn't start
 export DISPLAY=:0.0
 
+Exploring videocapture function with opencv2
+https://stackoverflow.com/questions/46387794/how-to-access-webcam-through-opencv-in-bash
+Currently WSL doesn't seem tom support opening webcam function...
