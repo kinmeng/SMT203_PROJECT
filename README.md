@@ -15,10 +15,13 @@ This repository uses the facial_recognition library here:
 https://github.com/ageitgey/face_recognition/
 
 To set up face_recognition, remember to install cmake.
-sudo apt-get -y install cmake
-If there is an error, building cmake remeber to download vs_buildtools before running the above command
+
 pip install Pillow
 pip install face_recognition
+sudo apt-get update
+sudo apt-get install -y build-essential
+sudo apt-get -y install cmake
+If there is an error, building cmake remeber to download vs_buildtools before running the above command
 
 Follow the instructions here to setup the correct environment for the repository:
 https://ourcodeworld.com/articles/read/841/how-to-install-and-use-the-python-face-recognition-and-detection-library-in-ubuntu-16-04
