@@ -1,0 +1,16 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th> Name </th>
+            <th> Results </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in att_list %}
+        <tr>
+            <td>{{ record["name"] }}</td>
+            <td>{{ record["attendance"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
