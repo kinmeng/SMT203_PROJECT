@@ -5,7 +5,7 @@ Problem statement of our project The current attendance-taking process is unstan
 
 Our solution
 
-PRESENSE Logo
+![PRESENSE Logo](https://github.com/kinmeng/SMT203_PROJECT/blob/master/PRESENSE.PNG)
 
 Before you clone the repo, you should install the correct environment to run the repository. This repository uses the facial_recognition library here: https://github.com/ageitgey/face_recognition/
 
