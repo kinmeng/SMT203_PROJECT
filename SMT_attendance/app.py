@@ -95,17 +95,17 @@ def student():
 def processPhoto():
 	if request.method == 'GET':
 		att_list = []
-		found_students =[]
-		students_encoding=[]
+
+	
+	
 		
 		class_photos = Photo.query.filter_by(week=1)
 		for image in class_photos:
 			image = image.serialize()
 			path = './app_storage/'+ image['img_filename']
 			class_photo = face_recognition.load_image_file(path)
-			face_locations_class = face_recognition.face_locations(class_photo)
-			face_encodings_class = face_recognition.face_encodings(class_photo, face_locations_class)
-
+			face_encodings_class = face_recognition.face_encodings(class_photo)
+	
 			
 
 		returned_students = Student.query.filter_by(student_section='G1')	
@@ -114,17 +114,14 @@ def processPhoto():
 			face_encoding_student = student['encodings']
 			face_encoding_student = literal_eval(face_encoding_student)
 			face_encoding_student = np.asarray(face_encoding_student)
-			if student['name'] not in found_students:
-				results = face_recognition.compare_faces(face_encodings_class, face_encoding_student)
-				if results[0] == True:
-					att_list.append({'name': student['name'], 'attendance':'present'})
-					found_students.append(student['name'])
-				else: 
-					att_list.append({'name': student['name'], 'attendance':'absent'})
-					found_students.append(student['name'])
+			results = face_recognition.compare_faces(face_encodings_class, face_encoding_student)
+			print(results)
+			if True in results:
+				att_list.append({'name': student['name'], 'attendance':'present'})
+			else: 
+				att_list.append({'name': student['name'], 'attendance':'absent'})
+		
 		return render_template('displayer.html', att_list=att_list)
-
-
 
 
 
