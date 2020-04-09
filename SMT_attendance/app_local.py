@@ -21,15 +21,14 @@ UPLOAD_FOLDER = "./app_storage"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 student_jpg = "./student_photo"
 app.config['students'] = student_jpg
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://kinmeng:password@localhost:5432/attendance_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://kinmeng:password@localhost:5432/attendance_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-# base_url = "http://localhost:5000"
-base_url = "http://presenseapp.herokuapp.com"
+base_url = "http://localhost:5000"
+# base_url = "http://presenseapp.herokuapp.com"
 
 
-from models import Photo, Student, Attendance
+from models_local import Photo, Student, Attendance
 
 @app.route('/')
 def home():
