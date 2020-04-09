@@ -88,7 +88,10 @@ from Flask import url_for
            </a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="uploader">Take Attendance</a>
+
+
+           <a class="nav-link" href="{{ url_for('uploader', filename='upload.html') }}">Take Attendance</a>
+
          </li>
          <!-- <li class="nav-item">
            <a class="nav-link" href="#">Services</a>
@@ -121,13 +124,12 @@ from Flask import url_for
             <option value="11">Week 11</option>
             <option value="12">Week 12</option>
             <option value="13">Week 13</option>
-            </select>
+         </select>
          </li>
-           <li><input type="submit" value="Submit" /></li>
-
-      </ul>
-      </form>
-
-     
-  
+          <li> <input type="submit" value="Submit" /></li>
+       </ul>
+       
+    </form>
+ </body>
+ 
  </html>
