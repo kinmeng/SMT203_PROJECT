@@ -4,6 +4,7 @@ This is a project for the module SMT203 - Smart City Systems Management
 The project is accessible at this link: https://presenseapp.herokuapp.com/
 
 Problem statement of our project 
+
 The current attendance-taking process is unstandardized and inefficient in the age of smart technology. This simple activity has resulted in time wastage amongst professors and teaching assistants.
 
 Our solution
